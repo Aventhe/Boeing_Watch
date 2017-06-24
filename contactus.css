@@ -8,13 +8,12 @@
 
 ::-webkit-scrollbar
 {
-	width: 8px;
+	width: 6px;
 	background-color: #F5F5F5;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	border-radius: 8px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #D62929;
 }
@@ -30,7 +29,6 @@ body {
 
 .bheader{
     background-image: url('/titlebar/autocad-wallpaper-2.jpg'); 
-    opacity: 0.1;
     width:100%;
     height: 80px;
     position:absolute;
@@ -98,15 +96,6 @@ ul {
 
 }
 
-* {
-   -webkit-box-sizing:border-box;
-   -moz-box-sizing:border-box;
-   -webkit-font-smoothing:antialiased;
-   -moz-font-smoothing:antialiased;
-   -o-font-smoothing:antialiased;
-   font-smoothing:antialiased;
-   text-rendering:optimizeLegibility;
-}
 
 h4 {
    margin: 0 0 20px 0;
@@ -116,18 +105,19 @@ h4 {
 }
 
 #contact-form {
-   background-color:rgba(72,72,72,0.9);
+   background-color:rgba(80,80,80,1);
    padding: 10px 20px 30px 20px;
-   max-width:100%;
-   top: 130px;
-   float: left;
+   width: 22.5%;
+   min-width: 280px;
+   height: 40%;
+   min-height: 450px;
+   top: calc(140px + 30vh);
+   float: right;
    right: 20px;
-   position: absolute;
-   margin-top:30px;
-   margin-left: -260px;
-   border-radius:7px;
-   -webkit-border-radius:7px;
-   -moz-border-radius:7px;
+   position: relative;
+   border-radius: 3px;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
 }
 #contact-form input,   
 #contact-form select,   
@@ -156,31 +146,27 @@ h4 {
 }  
 #contact-form textarea {
    width:100%;
-   height: 150px;
+   height: 250px;
 }
 #contact-form button[type="submit"] {
    cursor:pointer;
    width:100%;
    border:none;
-   background:#991D57;
-   background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-   background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-   background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+   background:#F08080;
+   background-color: #A40000;
    color:#FFF;
    margin:0 0 5px;
    padding:10px;
    border-radius:5px;
 }
 #contact-form button[type="submit"]:hover {
-   background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-   background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-   background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+    background-color: #6E0000;
    -webkit-transition:background 0.3s ease-in-out;
    -moz-transition:background 0.3s ease-in-out;
    transition:background-color 0.3s ease-in-out;
 }
 #contact-form button[type="submit"]:active {
-   box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+   background-color: green;
 }
 input:required, textarea:required {  
    box-shadow: none;
@@ -199,9 +185,9 @@ input:required, textarea:required {
 }
 
 .footer {
-   position:absolute;
+   position: relative;
    right: 0;
-   top: 2400px;
+   top: 1200px;
    left: 0;
    background-color: #0f6eb1;
    text-align: center;
@@ -226,9 +212,9 @@ input:required, textarea:required {
     padding: 0;
     position: absolute;
     z-index: 5;
-    top: 140px;
+    top: calc(140px + 30vh);
     width: 74%;
-    min-width: 960px;
+    min-width: 680px;
     max-width: 1920px;
     margin-left: 20px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -257,7 +243,7 @@ input:required, textarea:required {
     position: relative;
     width: 96%;
     float: left; 
-    margin: 0 20px 0 20px;
+    margin: 0 20px 10px 20px;
     font-weight: 300;
     text-align: justify;
 }
@@ -265,5 +251,37 @@ input:required, textarea:required {
 .line-separator{
     height:1px;
     background:#717171;
-    margin-right: 4%;
+    margin-right: 40px;
+}
+
+
+.frontboeing img{
+    width: 100%;
+    min-width: 960px;
+    background-size: cover; 
+    top: 120px;
+    height: 30vh;
+    min-height: 200px;
+    position: absolute;
+}
+
+.hq img{
+    float:left;
+    margin: 0 20px 20px 20px;
+    top: 0;
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.adress h5 {
+    font-family:"Share Tech", sans-serif;
+    font-size: 18px;
+    color: #676767;
+    position: relative;
+    width: 96%;
+    float: left; 
+    margin: 0 20px 20px 20px;
+    font-weight: 500;
+    text-align: left;
 }
