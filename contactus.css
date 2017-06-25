@@ -95,13 +95,31 @@ ul {
     z-index: 5;
 
 }
+.tcpdf h5 {
+    margin-left: 18px;
+    font-family: "Exo", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0;
+}
 
+* {
+   -webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+   -webkit-font-smoothing:antialiased;
+   -moz-font-smoothing:antialiased;
+   -o-font-smoothing:antialiased;
+   font-smoothing:antialiased;
+   text-rendering:optimizeLegibility;
+}
 
 h4 {
    margin: 0 0 20px 0;
    font-family: arial, sans-serif;
    font-weight: 600;
    color: white;
+   font-size:20px;
 }
 
 #contact-form {
@@ -218,7 +236,7 @@ input:required, textarea:required {
     max-width: 1920px;
     margin-left: 20px;
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius:3px;
+    border-radius:5px;
     
 }
 

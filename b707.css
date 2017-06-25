@@ -130,17 +130,17 @@ ul {
     min-width: 960px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 20px;
 }
 
 .boeinga img{
-    width: 75%;
+    width: 100%;
     min-width: 400px;
     min-height: 200px;
-    height: 45vh;
+    height: 60vh;
     display: block;
-    margin: 10px auto 20px auto;
+    margin: 0px auto 20px auto;
     border-radius: 10px;
     position: relative;
 }
@@ -153,7 +153,7 @@ ul {
 
 .backborder h2 {
     font-family:"Share Tech", sans-serif;
-    font-size: 30px;
+    font-size: 36px;
     color: #00008B;
     position: relative;
     width: 100%;
@@ -178,7 +178,7 @@ ul {
 
 .backborder h4{
     font-family:"Share Tech", sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     color: #00008B;
     position: relative;
     width: 100%;

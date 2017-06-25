@@ -14,8 +14,9 @@
 		<link rel="manifest" href="Favicon/manifest.json">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css">
+		
 			a.one:link, a:visited {                                                     
-    			color: #0f6eb1;
+    			color: white;
     			text-align: center; 
     			text-decoration: none;
     			display: inline-block;
@@ -35,6 +36,45 @@
 				background:black;
     			color: white;
     			padding: 10px 25px 10px 25px;
+    		}
+    		
+    		a.two:link, a.two:visited {                                                     
+    			color: #3D3D3D;
+    			float: left;
+    			text-decoration:none;
+    			margin-left: 20px;
+    			
+			}
+			
+			a.two:hover {
+    			color: black;
+    			margin-left: 20px;			
+			}
+			
+    		a.two:active{
+    			color: #0f6eb1;
+    			margin-left: 20px;
+    		}
+    		
+    		@media screen and (max-width: 1250px) {
+               .box {
+               	width: 67%;
+               }
+            	.box p{
+            		margin-right: 20px;
+            		width: 94%;
+            	}
+    		}
+    		
+    		@media screen and (max-width: 1000px) {
+    			.box{
+    				float:none;
+    				margin-left: 150px
+    			}
+    			
+    			#contact-form{
+    				display:none;
+    			}
     		}
     		
 		</style>
@@ -71,16 +111,21 @@
 	</h2>
 	<p>Thank you for viewing the Boeing Watch website. The people at Boeing Watch are always looking for feedback through the help
 	of commments and suggestions in order to improve the site. The people at Boeing Watch are also here to help you out
-	with any problems or questions you may have.</p>
-	<h2>The Boeing Watch Team</h2>
-	<p>The Boeing Watch team comprises of three key individuals: Archit Mahajan, Benedek Horvath and (certainly not) Nicholas Kalapos. These three
-	individuals embarked on a perilous quest to create an interactive mapping system that explored a concept. They chose the intruiging and interesting
-	concept of the evolution of Boeing Aircraft. This was all done in order to complete a preliminary IPT assignment... The survival of this website is
-	entirely dependent on the marks!!!</p>
+	with any problems or questions you may have.</p> 
+	<br>
+	<div class="tcpdf">
+	<a class="two" href="/titlebar/Boeing_Watch_TC.pdf" target="_blank"><h5>Terms and Conditions</h5></a>
+	</div>
+	<h2>The Boeing Watch Team
+	<div class="line-separator"></div>
+	</h2>
+	<p>The Boeing Watch team comprises of three key individuals: Archit Mahajan, Benedek Horvath and Nicholas Kalapos. These three
+	individuals embarked on a perilous quest to create an interactive mapping system that explored a certain concept or product. As a result, they chose the intruiging and interesting
+	concept of the evolution of Boeing Aircraft.</p>
+		<br>
+		<p> <b>Benedek Horvath</b>: NSBHS IPT Student, Lead Website Developer, Website Presenter, Researcher, Documentation Reviewer, Aviation Enthusiast</p>
 		<br>
 	<p> <b>Archit Mahajan</b>: NSBHS IPT Student, Website Developer, Website Presenter, Researcher, Documentation Editor and Reviewer</p>
-		<br>
-	<p> <b>Benedek Horvath</b>: NSBHS IPT Student, Lead Website Developer, Website Presenter, Researcher, Documentation Reviewer, BOEING ENTUHSIAST!!!</p>
 		<br>
 	<p> <b>Nicholas Kalapos</b>: NSBHS IPT Student, Website Developer, Website Presenter, Researcher and Documentation Manager</p>	
 	<h2>Boeing Watch Headquarters</h2>
@@ -89,7 +134,7 @@
 	</div>
 	<p>12 Jacklin Street 
 		<br>
-	Mooretown Town, NSW
+	Mooretown Town
 		<br>
 	Sydney New South Wales
 		<br>
@@ -100,7 +145,7 @@
 <!----------------------------------------------------------------------------------------CONTACT-FORM----------------------------------------------------------------------------->
 <div id="contact-form">
 	<div>
-		<h4>Have a question? Let us know - We are here to help</h4> 
+		<h4>Have a question? Let us know!</h4> 
 	</div>
 		<p id="failure">An error occured - message not sent.</p>  
 		<p id="success">Your message was sent successfully. Thank you!</p>
@@ -124,8 +169,8 @@
 		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
 		      </label>  
 			</div>
-			<div>		           
-		      <link href="/"><button name="submit" type="submit" id="submit" >SEND</button></link>
+			<div>	
+		     <button name="submit" type="submit" class="submit">SEND</button>
 			</div>
 		   </form>
 
